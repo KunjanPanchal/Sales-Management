@@ -4,16 +4,16 @@ const router = express.Router();
 
 router.use('/', async (req, res) => {
     const { month } = req.query
-    let t = await fetch(`http://localhost:3000/api/transactions?month=${month}`);
+    let t = await fetch(`https://sales-management-backend-bw9z.onrender.com/api/transactions?month=${month}`);
     let transactions = await t.json();
 
-    const s = await fetch(`http://localhost:3000/api/statistics?month=${month}`);
+    const s = await fetch(`https://sales-management-backend-bw9z.onrender.com/api/statistics?month=${month}`);
     let statistics = await s.json();
 
-    const b = await fetch(`http://localhost:3000/api/barchartdata?month=${month}`);
+    const b = await fetch(`https://sales-management-backend-bw9z.onrender.com/api/barchartdata?month=${month}`);
     const barChartData = await b.json();
 
-    const p = await fetch(`http://localhost:3000/api/piechartdata?month=${month}`);
+    const p = await fetch(`https://sales-management-backend-bw9z.onrender.com/api/piechartdata?month=${month}`);
     const pieChartData = await p.json();
 
 
