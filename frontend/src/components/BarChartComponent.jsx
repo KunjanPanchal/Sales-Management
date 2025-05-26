@@ -8,7 +8,7 @@ const BarChartComponent = ({ month }) => {
   useEffect(() => {
     async function fetchData() {
       try {
-        let res = await fetch(`http://localhost:3000/api/barchartdata?month=${month}`);
+        let res = await fetch(`https://sales-management-backend-bw9z.onrender.com/api/barchartdata?month=${month}`);
         let tra = await res.json();
         setData(tra)
       } catch (error) {

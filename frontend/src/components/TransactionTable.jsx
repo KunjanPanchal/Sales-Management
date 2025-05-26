@@ -8,7 +8,7 @@ const TransactionTable = ({ month, search }) => {
     useEffect(() => {
         async function fetchData() {
             try {
-                let res = await fetch(`http://localhost:3000/api/transactions?month=${month}&search=${search}&page=${page}`);
+                let res = await fetch(`https://sales-management-backend-bw9z.onrender.com/api/transactions?month=${month}&search=${search}&page=${page}`);
                 let tra = await res.json();
                 // console.log(tra)    
                 setTransactions(tra)

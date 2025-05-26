@@ -7,7 +7,7 @@ const Statistics = ({ month }) => {
     useEffect(() => {
         async function fetchData() {
             try {
-                let res = await fetch(`http://localhost:3000/api/statistics?month=${month}`);
+                let res = await fetch(`https://sales-management-backend-bw9z.onrender.com/api/statistics?month=${month}`);
                 let tra = await res.json();
                 setStatisticsData(tra)
             } catch (error) {
