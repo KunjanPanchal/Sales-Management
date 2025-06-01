@@ -1,6 +1,7 @@
 # MERN Stack Sales Dashboard
 
 A full-stack web application using **MERN Stack** that fetches transaction data from a third-party API, stores it in MongoDB, and displays statistics, a transactions table, and charts on the frontend.
+https://sales-management-a8fg.onrender.com/
 
 ## 📌 Features
 - **Backend (Node.js + Express + MongoDB)**
