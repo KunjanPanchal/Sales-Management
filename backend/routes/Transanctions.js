@@ -4,7 +4,7 @@ import TransactionData from "../models/TransactionData.js";
 const router = express.Router();
 
 router.use("/", async (req, res) => {
-    const { month, search, page = 1, perPage = 10 } = req.query;
+    const { month, search, page = 1, perPage = 4 } = req.query;
     const date = new Date(`${month} 1, 2022`);
 
     const monthAsNumber = date.getMonth() + 1;
